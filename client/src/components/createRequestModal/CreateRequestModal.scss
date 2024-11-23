@@ -1,0 +1,35 @@
+@import '../../utils/common.scss';
+
+.create-request {
+	&__request-buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: toRem(20);
+		margin-top: em(20);
+		@media (min-width: $mobile) {
+			margin-top: em(40);
+		}
+	}
+	&__request-button {
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+		@media (min-width: $mobile) {
+			font-size: em(20);
+		}
+	}
+	&__form {
+		padding: em(15);
+		display: flex;
+		flex-direction: column;
+		gap: em(15);
+	}
+	&__label {
+		font-weight: 500;
+	}
+	&__error-message {
+		color: red;
+	}
+}

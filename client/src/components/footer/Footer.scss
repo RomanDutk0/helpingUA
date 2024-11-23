@@ -1,0 +1,16 @@
+@import "../../utils/common.scss";
+.footer {
+	border-top: 1px solid $greyBorderColor;
+	padding: 0 15px;
+}
+.footer__container {
+	padding: em(15) 0;
+	display: flex;
+	column-gap: em(40);
+	row-gap: em(20);
+	flex-wrap: wrap;
+	align-items: center;
+}
+.footer__link {
+	@extend %linkHover;
+}
